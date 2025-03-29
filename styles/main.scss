@@ -1,0 +1,14 @@
+@use 'variables' as *;
+@use 'header';
+@use 'mixins';
+@use 'hero';
+@use 'services';
+
+body {
+    margin: 0;
+    background-image: url("/img/content.png");
+    background-repeat: no-repeat;
+    background-color: $black;
+    background-position: top 150px left 105%;
+    margin-left: 160px;
+}

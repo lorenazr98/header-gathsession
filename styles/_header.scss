@@ -1,0 +1,36 @@
+@use 'variables' as *;
+
+header {
+    margin-top: 37px;
+    display: flex;
+
+    img {
+        margin-right: 742px;
+    }
+
+    nav {
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 48px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-family: $poppins;
+
+            img {
+                width: 32px;
+                height: 4px;
+                margin: 0;
+            }
+        }
+
+        .home {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+    }
+}

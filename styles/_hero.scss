@@ -1,0 +1,48 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+#hero {
+    h1 {
+        font-family: $merriweather;
+        font-weight: $merriweather-bold;
+        color: white;
+        font-size: 80px;
+        margin-bottom: 24px;
+        letter-spacing: 2px;
+    }
+
+    p {
+        font-family: $poppins;
+        font-weight: $poppins-regular;
+        color: $grey;
+        font-size: 20px;
+        width: 35%;
+        margin-bottom: 32px;
+    }
+
+    .hero-buttons {
+        display: flex;
+        gap: 32px;
+        margin-bottom: 144px;
+
+        button {
+            @include button-pink;
+
+            &:hover {
+                @include button-pink-hover;
+            }
+        }
+    
+        .learn-more {
+            color: white;
+            text-decoration: underline;
+            font-family: $poppins;
+            font-size: 18px;
+            font-weight: $poppins-semibold;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            gap: 6px;
+        }
+    }
+}
